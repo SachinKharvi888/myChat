@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="6dp"
+    android:background="@color/white">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        app:cardCornerRadius="22dp"
+        android:id="@+id/set"
+        android:backgroundTint="@color/blue">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/frdprofile_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/use4"
+            android:layout_gravity="center"
+            />
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/frdusername11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@id/set"
+        android:layout_toRightOf="@id/set"
+        android:text="username1"
+        android:textSize="18dp"
+        android:textColor="@color/black"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:id="@+id/frdimg_on"
+        android:visibility="gone"
+        android:layout_below="@id/frdusername11"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="-15dp"
+        android:layout_toRightOf="@id/set"
+        android:layout_toEndOf="@id/set"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/frdimg_off"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:visibility="gone"
+        android:layout_below="@id/frdusername11"
+        android:layout_marginLeft="-15dp"
+        android:layout_marginTop="1dp"
+        android:layout_toEndOf="@id/set"
+        android:layout_toRightOf="@id/set"
+        />
+
+    <TextView
+        android:id="@+id/last_seen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/frdusername11"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/set"
+        android:maxLines="1"
+        android:padding="1dp"
+        android:text="last seen"
+        android:textColor="@color/dark"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/red"
+        android:layout_alignEnd="@id/frdusername11"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:id="@+id/newchattxt"
+
+        />
+    <ImageButton
+        android:id="@+id/recentChatbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@color/white"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

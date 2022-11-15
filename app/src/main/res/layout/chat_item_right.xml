@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="2dp">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentRight="true">
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:id="@+id/imgestyle"
+            app:cardCornerRadius="10dp"
+
+            >
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/profile_24"
+                android:id="@+id/showimagee"
+                android:layout_alignParentRight="true"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+        <ImageView
+            android:id="@+id/likeimageR"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_toLeftOf="@id/imgestyle"
+            android:src="@drawable/use4"
+            android:layout_alignBottom="@id/imgestyle"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/likeimage3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ewrer"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgestyle"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/msgstyle"
+
+            >
+            <ImageView
+                android:id="@+id/likemsgeR"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_toLeftOf="@id/imgestyle"
+                android:src="@drawable/use4"
+                android:layout_alignBottom="@id/imgestyle"
+                android:layout_gravity="bottom"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/show_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_left"
+                android:padding="5dp"
+                android:text="hello"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:backgroundTint="@color/msdsback"
+                />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9:30pm"
+            android:layout_below="@+id/msgstyle"
+            android:layout_alignParentRight="true"
+            android:textSize="10dp"
+            android:id="@+id/timeR"
+            android:textColor="@color/dark"
+            />
+
+        <TextView
+            android:id="@+id/text_seen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/timeR"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="1dp"
+            android:text="seen"
+            android:textColor="@color/dark"
+            />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
